@@ -1,0 +1,14 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>contador: {{contador}}</p>
+<p>nome: {{name}}</p>
+<button (click)="changeContador()" [disabled]="contador >= 10">Mudar Contador</button>
+<button (click)="zerarContador()" [disabled]="contador < 10" >Zerar</button>
+
+<br>
+<p>
+    <input type="text" placeholder="Type something..." [(ngModel)]="name">
+</p>
